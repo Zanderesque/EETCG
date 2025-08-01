@@ -7,18 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "opennext:build": "next build && open-next build",
-    "opennext:dev": "npx wrangler pages dev .open-next/standalone --compatibility-flag=nodejs_compat",
-    "preview": "npm run opennext:build && npm run opennext:dev"
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@next/env": "^15.4.5",
-    "@opennextjs/cloudflare": "1.6.3",
     "next": "14.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.13",
     "@types/node": "20.8.10",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",

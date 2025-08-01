@@ -1,8 +1,8 @@
 # wrangler.toml for Cloudflare Pages
-name = 'eetcg'
-compatibility_date = "2024-03-25"
+name = "eetcg"
+compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".open-next/standalone"
+pages_build_output_dir = ".vercel/output/static"
 
 # Environment variables (add as needed)
 [vars]
