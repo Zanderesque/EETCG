@@ -174,6 +174,54 @@ This repository contains the source code for the Elite Enterprise Transformation
 - Ensure WCAG 2.1 compliance (e.g., alt text for images, keyboard navigation).
 - Use semantic HTML and ARIA labels for screen readers.
 
+## Deployment
+
+This website is deployed using Cloudflare Pages with the OpenNext adapter for Next.js applications. The deployment process has been optimized for reliability and uses both automated CI/CD and manual deployment options.
+
+### Automated Deployment (Recommended)
+
+The project uses GitHub Actions for automated deployment:
+
+1. **Push to main branch** - Triggers automatic deployment
+2. **GitHub Actions workflow** runs the following steps:
+   - Install dependencies with `npm ci`
+   - Run linting checks
+   - Build with OpenNext using `npm run opennext:build`
+   - Deploy to Cloudflare Pages
+
+### Manual Deployment
+
+For local testing and manual deployment:
+
+```bash
+# Install dependencies
+npm install
+
+# Build and preview locally
+npm run preview
+
+# Deploy to production
+npm run deploy
+```
+
+### Cloudflare Pages Build Configuration
+
+The following build settings are configured in Cloudflare Pages:
+
+- **Build command:** `npm run opennext:build`
+- **Deploy command:** `wrangler pages deploy .open-next/standalone`
+- **Non-production branch deploy command:** `npm run opennext:build && wrangler pages deploy .open-next/standalone`
+- **Path:** `/`
+
+### Key Deployment Features
+
+- **Pure OpenNext approach** - Eliminates adapter conflicts
+- **Automated CI/CD pipeline** - Reliable deployments on every push
+- **Error-free configuration** - Optimized wrangler.toml and package.json
+- **Standalone output** - Next.js configured for serverless deployment
+
+For detailed deployment information and troubleshooting, see [CLOUDFLARE_DEPLOYMENT.md](./CLOUDFLARE_DEPLOYMENT.md).
+
 ## Development Setup
 
 ### Install Dependencies:
@@ -192,35 +240,10 @@ npm run build
 npm run start
 ```
 
-## Deployment
-
-This website is deployed using Cloudflare Pages with the OpenNext adapter for Next.js applications. The deployment process uses the following workflow:
-
-1. Code is pushed to the GitHub repository
-2. Cloudflare Pages automatically triggers a build using the configured build settings
-3. The OpenNext adapter optimizes the Next.js application for deployment on Cloudflare's edge network
-
-### Build and Deploy Commands
-
-The project uses the following scripts for building and deploying:
-
-```bash
-# Local development
-npm run dev
-
-# Build for production
-npm run opennext:build
-
-# Deploy to Cloudflare
-npm run opennext:deploy
-```
-
-For more detailed information about the deployment process, see the [CLOUDFLARE_DEPLOYMENT.md](./CLOUDFLARE_DEPLOYMENT.md) document.
-
 ## Future Enhancements
 - Add a blog section for thought leadership content.
 - Integrate a scheduling tool (e.g., Calendly) for consultation bookings.
-- Implement analytics (e.g., Google Analytics) to track user engagement.fd
+- Implement analytics (e.g., Google Analytics) to track user engagement.
 
 ## Contact
 For questions or contributions, contact the development team at dev@eetconsultinggroup.com.
