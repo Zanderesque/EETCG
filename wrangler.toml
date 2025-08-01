@@ -1,19 +1,25 @@
 # wrangler.toml
 name = 'eetcg'
 main = ".open-next/worker.js"
-compatibility_date = "2025-03-25"
+compatibility_date = "2024-03-25"
 compatibility_flags = ["nodejs_compat"]
 
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
 
-[[r2_buckets]]
-binding = "NEXT_INC_CACHE_R2_BUCKET"
-bucket_name = "next-inc-cache"
+# Optional: R2 bucket for incremental cache (uncomment if needed)
+# [[r2_buckets]]
+# binding = "NEXT_INC_CACHE_R2_BUCKET"
+# bucket_name = "next-inc-cache"
 
 [build]
 command = "npm run opennext:build"
 
+# Environment variables (add as needed)
+[vars]
+NODE_ENV = "production"
+
+# Pages configuration
 [site]
 bucket = ".open-next/assets"

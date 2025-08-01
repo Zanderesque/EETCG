@@ -1,15 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure image optimization
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "via.placeholder.com",
-        pathname: "**",
-      },
-    ],
-  },
+  // Configure for serverless deployment
+  output: "standalone",
 };
 
 module.exports = nextConfig;
