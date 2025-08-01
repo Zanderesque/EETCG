@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { openSans, montserrat } from './services/fonts';
 
 export const metadata: Metadata = {
   title: 'Elite Enterprise Transformation Consulting Group',
@@ -14,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className={montserrat.variable}>
+      <body className={openSans.className}>
         <Navbar />
         <main>{children}</main>
         <Footer />
