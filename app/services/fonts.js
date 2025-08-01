@@ -1,15 +1,13 @@
-import { Open_Sans, Montserrat } from "next/font/google";
+// Using CSS variables for system fonts instead of Google Fonts
+// This approach eliminates external network requests during build
 
-export const openSans = Open_Sans({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600"],
-  fallback: ["system-ui", "arial"],
-});
+// Define the font stacks as CSS variables
+export const fontVariables = {
+  // Primary font (replacing Montserrat)
+  primary: "var(--font-primary)",
+  // Secondary font (replacing Open Sans)
+  secondary: "var(--font-secondary)",
+};
 
-export const montserrat = Montserrat({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-  fallback: ["system-ui", "arial"],
-});
+// These classes will be applied to the HTML element
+export const fontClasses = "font-system";
