@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && open-next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
@@ -16,8 +16,8 @@
     "opennext:dev": "wrangler pages dev .open-next/standalone --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
-    "@next/env": "^15.4.5",
     "@cloudflare/next-on-pages": "^1.13.13",
+    "@next/env": "^15.4.5",
     "@opennextjs/cloudflare": "^1.6.2",
     "error-stack-parser-es": "1.0.5",
     "next": "14.0.0",
@@ -33,6 +33,7 @@
     "eslint-config-next": "14.0.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "wrangler": "^4.27.0"
   }
 }
