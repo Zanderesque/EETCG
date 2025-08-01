@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { use } from 'react';
 
 // Consultant data - same as in the main consultants page
 const consultants = [
@@ -255,9 +256,12 @@ With a robust background at organizations like WhirlWind Technologies and the De
   }
 ];
 
-export default function ConsultantProfile({ params }: { params: { id: string } }) {
+export default function ConsultantProfile({ params }: { params: Promise<{ id: string }> }) {
+  // Unwrap the params Promise using React.use()
+  const { id } = use(params);
+  
   // Find the consultant by ID
-  const consultant = consultants.find(c => c.id === params.id);
+  const consultant = consultants.find(c => c.id === id);
   
   // If consultant not found, return 404
   if (!consultant) {
