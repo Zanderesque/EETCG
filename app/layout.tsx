@@ -1,7 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
+import { Navbar } from '../components/Navbar';
+import { Footer } from '../components/Footer';
 import { openSans, montserrat } from './services/fonts';
 
 export const metadata: Metadata = {
