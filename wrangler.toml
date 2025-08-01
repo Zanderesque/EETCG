@@ -1,21 +1,8 @@
-# wrangler.toml
+# wrangler.toml for Cloudflare Pages
 name = 'eetcg'
-main = ".open-next/worker.js"
 compatibility_date = "2024-03-25"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".open-next/standalone"
-
-[assets]
-directory = ".open-next/assets"
-binding = "STATIC_ASSETS"
-
-# Optional: R2 bucket for incremental cache (uncomment if needed)
-# [[r2_buckets]]
-# binding = "NEXT_INC_CACHE_R2_BUCKET"
-# bucket_name = "next-inc-cache"
-
-[build]
-command = "npm run opennext:build"
 
 # Environment variables (add as needed)
 [vars]
