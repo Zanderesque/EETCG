@@ -1,12 +1,13 @@
-name = "EETCG"
+# wrangler.toml
+name = 'eetcg'
 main = ".open-next/worker.js"
 compatibility_date = "2025-03-25"
 compatibility_flags = ["nodejs_compat"]
 
-[[r2_buckets]]
-binding = "NEXT_INC_CACHE_R2_BUCKET"
-bucket_name = "next-inc-cache"
-
 [assets]
 directory = ".open-next/assets"
 binding = "ASSETS"
+
+[[r2_buckets]]
+binding = "NEXT_INC_CACHE_R2_BUCKET"
+bucket_name = "next-inc-cache"

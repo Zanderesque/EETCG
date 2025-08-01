@@ -39,6 +39,7 @@ This repository contains the source code for the Elite Enterprise Transformation
 ├── package-lock.json         # Dependency lock file
 ├── postcss.config.js         # PostCSS configuration
 ├── tailwind.config.js        # Tailwind CSS configuration
+├── wrangler.toml             # Cloudflare Workers configuration
 └── tsconfig.json             # TypeScript configuration
 ```
 
@@ -172,32 +173,28 @@ npm run start
 
 ## Deployment
 
-### Cloudflare Pages Deployment (Recommended)
-This project is configured to deploy on Cloudflare Pages using OpenNext for optimal performance and edge capabilities.
+This website is deployed using Cloudflare Pages with the OpenNext adapter for Next.js applications. The deployment process uses the following workflow:
 
-#### Build and Deploy with OpenNext:
+1. Code is pushed to the GitHub repository
+2. Cloudflare Pages automatically triggers a build using the configured build settings
+3. The OpenNext adapter optimizes the Next.js application for deployment on Cloudflare's edge network
+
+### Build and Deploy Commands
+
+The project uses the following scripts for building and deploying:
+
 ```bash
-# Build the project with OpenNext
+# Local development
+npm run dev
+
+# Build for production
 npm run opennext:build
 
-# Deploy to Cloudflare Pages
+# Deploy to Cloudflare
 npm run opennext:deploy
 ```
 
-#### Configuration Files:
-- `open-next-config.js` and `open-next.config.ts` - OpenNext configuration for Cloudflare
-- `wrangler.toml` - Cloudflare Wrangler configuration
-- `next.config.js` - Next.js configuration with image optimization settings
-
-#### Environment Setup for Cloudflare:
-- Node.js version: 18.x or higher (20.x recommended)
-- Build command: `npm run opennext:build`
-- Output directory: `.open-next/standalone`
-
-### Alternative Deployment Options
-- Deploy on Vercel for seamless Next.js hosting.
-- Configure domain (https://eetconsultinggroup.com/) via Cloudflare DNS settings.
-- Enable automatic scaling and CDN for global performance.
+For more detailed information about the deployment process, see the [CLOUDFLARE_DEPLOYMENT.md](./CLOUDFLARE_DEPLOYMENT.md) document.
 
 ## Future Enhancements
 - Add a blog section for thought leadership content.
