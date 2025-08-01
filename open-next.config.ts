@@ -2,5 +2,8 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare";
 
 export default defineCloudflareConfig({
-  // Remove the incremental cache configuration for now
+  // Enable standalone output for Cloudflare Pages deployment
+  standalone: true,
+  // Set the output directory explicitly
+  outputStandalone: ".open-next/standalone"
 });
