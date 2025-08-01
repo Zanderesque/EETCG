@@ -7,19 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
-    "pages:watch": "npx @cloudflare/next-on-pages --watch",
-    "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat",
     "opennext:build": "next build && open-next build",
     "opennext:deploy": "wrangler pages deploy .open-next/standalone",
     "opennext:dev": "wrangler pages dev .open-next/standalone --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.13.13",
     "@next/env": "^15.4.5",
-    "@opennextjs/cloudflare": "^1.6.2",
-    "error-stack-parser-es": "1.0.5",
     "next": "14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
