@@ -220,7 +220,7 @@ The following build settings are configured in Cloudflare Pages:
 - **Error-free configuration** - Optimized wrangler.toml and package.json
 - **Standalone output** - Next.js configured for serverless deployment
 
-For detailed deployment information and troubleshooting, see [CLOUDFLARE_DEPLOYMENT.md](./CLOUDFLARE_DEPLOYMENT.md).
+For detailed deployment information and troubleshooting, see [CLOUDFLARE_DEPLOYMENT.md](./CLOUDFLARE_DEPLOYMENT.md)...
 
 ## Development Setup
 
