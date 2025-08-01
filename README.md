@@ -220,7 +220,7 @@ For more detailed information about the deployment process, see the [CLOUDFLARE_
 ## Future Enhancements
 - Add a blog section for thought leadership content.
 - Integrate a scheduling tool (e.g., Calendly) for consultation bookings.
-- Implement analytics (e.g., Google Analytics) to track user engagement.
+- Implement analytics (e.g., Google Analytics) to track user engagement.fd
 
 ## Contact
 For questions or contributions, contact the development team at dev@eetconsultinggroup.com.
