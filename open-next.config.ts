@@ -2,8 +2,7 @@
 import { defineCloudflareConfig } from "@opennextjs/cloudflare";
 
 export default defineCloudflareConfig({
-  // Enable standalone output for Cloudflare Pages deployment
-  standalone: true,
-  // Set the output directory explicitly
-  outputStandalone: ".open-next/standalone"
+  // OpenNext Cloudflare configuration
+  // The standalone output is controlled by Next.js config
+  // This file is for Cloudflare-specific settings
 });
