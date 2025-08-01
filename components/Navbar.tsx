@@ -16,7 +16,7 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <span className="text-2xl font-bold text-navy">EETCG</span>
+          <span className="text-2xl font-bold text-[color:var(--color-navy)]">EETCG</span>
         </Link>
 
         {/* Mobile Menu Button */}
@@ -52,19 +52,19 @@ export const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex md:items-center md:space-x-8">
-          <Link href="/" className="font-medium hover:text-gold">
+          <Link href="/" className="font-medium hover:text-[color:var(--color-gold)]">
             Home
           </Link>
-          <Link href="/about" className="font-medium hover:text-gold">
+          <Link href="/about" className="font-medium hover:text-[color:var(--color-gold)]">
             About
           </Link>
-          <Link href="/services" className="font-medium hover:text-gold">
+          <Link href="/services" className="font-medium hover:text-[color:var(--color-gold)]">
             Services
           </Link>
-          <Link href="/consultants" className="font-medium hover:text-gold">
+          <Link href="/consultants" className="font-medium hover:text-[color:var(--color-gold)]">
             Consultants
           </Link>
-          <Link href="/contact" className="font-medium hover:text-gold">
+          <Link href="/contact" className="font-medium hover:text-[color:var(--color-gold)]">
             Contact
           </Link>
         </div>
@@ -82,35 +82,35 @@ export const Navbar = () => {
             <div className="flex flex-col space-y-4">
               <Link
                 href="/"
-                className="font-medium hover:text-gold"
+                className="font-medium hover:text-[color:var(--color-gold)]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="font-medium hover:text-gold"
+                className="font-medium hover:text-[color:var(--color-gold)]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/services"
-                className="font-medium hover:text-gold"
+                className="font-medium hover:text-[color:var(--color-gold)]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="/consultants"
-                className="font-medium hover:text-gold"
+                className="font-medium hover:text-[color:var(--color-gold)]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Consultants
               </Link>
               <Link
                 href="/contact"
-                className="font-medium hover:text-gold"
+                className="font-medium hover:text-[color:var(--color-gold)]"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact

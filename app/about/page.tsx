@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       {/* Page Header */}
-      <section className="pt-32 pb-16 text-white bg-navy">
+      <section className="pt-32 pb-16 text-white bg-[color:var(--color-navy)]">
         <div className="container px-4 mx-auto text-center">
           <h1 className="mb-4 text-4xl font-bold md:text-5xl">About Us</h1>
           <p className="max-w-2xl mx-auto text-xl">
@@ -22,7 +22,7 @@ export default function About() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             {/* Mission */}
             <div className="p-8 bg-white rounded-lg shadow-md">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 text-white rounded-full bg-navy">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 text-white rounded-full bg-[color:var(--color-navy)]">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -38,7 +38,7 @@ export default function About() {
 
             {/* Vision */}
             <div className="p-8 bg-white rounded-lg shadow-md">
-              <div className="flex items-center justify-center w-16 h-16 mb-6 text-white rounded-full bg-navy">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 text-white rounded-full bg-[color:var(--color-navy)]">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -57,7 +57,7 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 bg-light-gray">
+      <section className="py-16 bg-[color:var(--color-light-gray)]">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto">
             <h2 className="mb-8 text-3xl font-bold text-center">Our Story</h2>
@@ -83,7 +83,7 @@ export default function About() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {/* Excellence */}
             <div className="p-6 text-center bg-white rounded-lg shadow-md">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-navy">
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-[color:var(--color-navy)]">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
@@ -96,7 +96,7 @@ export default function About() {
 
             {/* Integrity */}
             <div className="p-6 text-center bg-white rounded-lg shadow-md">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-navy">
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-[color:var(--color-navy)]">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -109,7 +109,7 @@ export default function About() {
 
             {/* Innovation */}
             <div className="p-6 text-center bg-white rounded-lg shadow-md">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-navy">
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-[color:var(--color-navy)]">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
@@ -122,7 +122,7 @@ export default function About() {
 
             {/* Diversity */}
             <div className="p-6 text-center bg-white rounded-lg shadow-md">
-              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-navy">
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 text-white rounded-full bg-[color:var(--color-navy)]">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
@@ -137,7 +137,7 @@ export default function About() {
       </section>
 
       {/* Team Overview */}
-      <section className="py-16 bg-light-gray">
+      <section className="py-16 bg-[color:var(--color-light-gray)]">
         <div className="container px-4 mx-auto">
           <div className="max-w-3xl mx-auto mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold">Our Team</h2>
@@ -165,13 +165,13 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 text-white bg-navy">
+      <section className="py-16 text-white bg-[color:var(--color-navy)]">
         <div className="container px-4 mx-auto text-center">
           <h2 className="mb-4 text-3xl font-bold">Ready to Work With Us?</h2>
           <p className="max-w-2xl mx-auto mb-8 text-xl">
             Let's discuss how our team can help you achieve your business goals through our expert consulting services.
           </p>
-          <Link href="/contact" className="btn bg-gold text-navy hover:bg-opacity-90">
+          <Link href="/contact" className="btn bg-[color:var(--color-gold)] text-[color:var(--color-navy)] hover:bg-opacity-90">
             Contact Us Today
           </Link>
         </div>

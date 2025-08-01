@@ -55,11 +55,11 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="py-32">
       <div className="container">
         {/* Page Header */}
         <div className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-navy">Contact Us</h1>
+          <h1 className="mb-4 text-4xl font-bold text-[color:var(--color-navy)]">Contact Us</h1>
           <p className="max-w-2xl mx-auto text-lg text-gray-600">
             Ready to transform your business? Reach out to our team of expert consultants for a personalized consultation.
           </p>
@@ -84,20 +84,20 @@ export default function ContactPage() {
                     d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" 
                   />
                 </svg>
-                <h3 className="mb-4 text-2xl font-bold text-navy">Thank You!</h3>
+                <h3 className="mb-4 text-2xl font-bold text-[color:var(--color-navy)]">Thank You!</h3>
                 <p className="mb-6 text-gray-600">
                   Your message has been received. We'll get back to you within 1-2 business days.
                 </p>
                 <button
                   onClick={() => setSubmitSuccess(false)}
-                  className="px-6 py-2 text-white transition-colors rounded bg-navy hover:bg-opacity-90"
+                  className="px-6 py-2 text-white transition-colors rounded bg-[color:var(--color-navy)] hover:bg-opacity-90"
                 >
                   Send Another Message
                 </button>
               </div>
             ) : (
               <>
-                <h2 className="mb-6 text-2xl font-bold text-navy">Send Us a Message</h2>
+                <h2 className="mb-6 text-2xl font-bold text-[color:var(--color-navy)]">Send Us a Message</h2>
                 <form onSubmit={handleSubmit}>
                   <div className="grid gap-6 mb-6 md:grid-cols-2">
                     <div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[color:var(--color-navy)]"
                         required
                       />
                     </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[color:var(--color-navy)]"
                         required
                       />
                     </div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[color:var(--color-navy)]"
                       />
                     </div>
                     <div>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[color:var(--color-navy)]"
                       />
                     </div>
                   </div>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[color:var(--color-navy)]"
                     >
                       <option value="">Select a service</option>
                       <option value="Project Management">Project Management</option>
@@ -185,7 +185,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={5}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[color:var(--color-navy)]"
                       required
                     ></textarea>
                   </div>
@@ -197,7 +197,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full px-6 py-3 text-white transition-colors rounded bg-navy hover:bg-opacity-90 disabled:bg-gray-400"
+                    className="w-full px-6 py-3 text-white transition-colors rounded bg-[color:var(--color-navy)] hover:bg-opacity-90 disabled:bg-gray-400"
                   >
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
@@ -209,11 +209,11 @@ export default function ContactPage() {
           {/* Contact Information */}
           <div>
             <div className="p-8 mb-8 bg-white rounded-lg shadow-lg">
-              <h2 className="mb-6 text-2xl font-bold text-navy">Contact Information</h2>
+              <h2 className="mb-6 text-2xl font-bold text-[color:var(--color-navy)]">Contact Information</h2>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <svg
-                    className="w-6 h-6 mr-3 text-gold"
+                    className="w-6 h-6 mr-3 text-[color:var(--color-gold)]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -228,14 +228,14 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <a href="mailto:info@eetconsultinggroup.com" className="text-navy hover:text-gold">
+                    <a href="mailto:info@eetconsultinggroup.com" className="text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)]">
                       info@eetconsultinggroup.com
                     </a>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <svg
-                    className="w-6 h-6 mr-3 text-gold"
+                    className="w-6 h-6 mr-3 text-[color:var(--color-gold)]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -250,14 +250,14 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <a href="tel:+1234567890" className="text-navy hover:text-gold">
+                    <a href="tel:+1234567890" className="text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)]">
                       (123) 456-7890
                     </a>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <svg
-                    className="w-6 h-6 mr-3 text-gold"
+                    className="w-6 h-6 mr-3 text-[color:var(--color-gold)]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -278,13 +278,17 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p>Beech Island, South Carolina</p>
-                    <p>Serving clients nationwide</p>
+                    <p className="text-gray-600">
+                      Beech Island, South Carolina
+                    </p>
+                    <p className="text-gray-600">
+                      Serving clients nationwide
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <svg
-                    className="w-6 h-6 mr-3 text-gold"
+                    className="w-6 h-6 mr-3 text-[color:var(--color-gold)]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -299,22 +303,26 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <h3 className="font-semibold">Business Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM EST</p>
-                    <p>24/7 availability for urgent client needs</p>
+                    <p className="text-gray-600">
+                      Monday - Friday: 9:00 AM - 5:00 PM EST
+                    </p>
+                    <p className="text-gray-600">
+                      24/7 availability for urgent client needs
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* CTA Box */}
-            <div className="p-8 text-white rounded-lg bg-navy">
-              <h3 className="mb-4 text-xl font-bold text-gold">Schedule a Consultation</h3>
+            <div className="p-8 text-white rounded-lg bg-[color:var(--color-navy)]">
+              <h3 className="mb-4 text-xl font-bold text-[color:var(--color-gold)]">Schedule a Consultation</h3>
               <p className="mb-6">
                 Ready to take your business to the next level? Schedule a free 30-minute consultation with one of our expert consultants.
               </p>
               <Link 
                 href="/consultants" 
-                className="inline-block px-6 py-3 font-medium text-navy transition-colors bg-white rounded-md hover:bg-gold hover:text-white"
+                className="inline-block px-6 py-3 font-medium text-[color:var(--color-navy)] transition-colors bg-white rounded-md hover:bg-[color:var(--color-gold)] hover:text-white"
               >
                 Meet Our Consultants
               </Link>
@@ -324,7 +332,7 @@ export default function ContactPage() {
 
         {/* Map Section */}
         <div className="mt-16">
-          <h2 className="mb-6 text-2xl font-bold text-center text-navy">Our Headquarters</h2>
+          <h2 className="mb-6 text-2xl font-bold text-center text-[color:var(--color-navy)]">Our Headquarters</h2>
           <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
             {/* Google Maps embed of Beech Island, South Carolina */}
             <iframe
@@ -340,7 +348,7 @@ export default function ContactPage() {
             ></iframe>
           </div>
           <div className="mt-6">
-            <h3 className="mb-4 text-xl font-bold text-center text-navy">Our Consultants Nationwide</h3>
+            <h3 className="mb-4 text-xl font-bold text-center text-[color:var(--color-navy)]">Our Consultants Nationwide</h3>
             <p className="text-center text-gray-600 max-w-3xl mx-auto">
               While our headquarters is located in Beech Island, South Carolina, our team of expert consultants is distributed across the United States. 
               This allows us to serve clients nationwide with local expertise and personalized service.

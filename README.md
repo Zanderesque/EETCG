@@ -111,6 +111,27 @@ This repository contains the source code for the Elite Enterprise Transformation
 - **Next.js**: Use Next.js 14 (App Router) for server-side rendering, static site generation, and API routes.
 - **React**: Leverage React components for reusable UI elements (e.g., ConsultantCard, ServiceCard).
 
+### Font Configuration
+- **Google Fonts**: Using Next.js 14 font system with Montserrat and Open Sans.
+- **Implementation**: Fonts are configured in `app/services/fonts.js` and applied using the `.className` property (not `.variable` which is deprecated in Next.js 14).
+- **Usage Example**:
+  ```javascript
+  // In app/services/fonts.js
+  import { Open_Sans, Montserrat } from "next/font/google";
+  
+  export const openSans = Open_Sans({
+    subsets: ["latin"],
+    display: "swap",
+    weight: ["400", "500", "600"],
+  });
+  
+  // In components (e.g., layout.tsx)
+  import { openSans } from './services/fonts';
+  
+  // Apply the font
+  <div className={openSans.className}>Text with Open Sans</div>
+  ```
+
 ### Styling
 - **Tailwind CSS**: Use Tailwind for rapid, responsive styling with utility classes.
 - **Custom CSS**: Minimal custom CSS for specific components (e.g., hover effects, animations).

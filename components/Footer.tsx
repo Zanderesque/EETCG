@@ -6,12 +6,12 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 text-white bg-navy">
+    <footer className="py-12 text-white bg-[color:var(--color-navy)]">
       <div className="container">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <h3 className="mb-4 text-xl font-bold text-gold">Elite Enterprise Transformation</h3>
+            <h3 className="mb-4 text-xl font-bold text-[color:var(--color-gold)]">Elite Enterprise Transformation</h3>
             <p className="mb-4">
               A black, female-owned consulting firm based in Beech Island, specializing in transformative business solutions.
             </p>
@@ -19,7 +19,7 @@ export const Footer = () => {
               &copy; {currentYear} Elite Enterprise Transformation Consulting Group. All rights reserved.
             </p>
             <p className="mt-2 text-sm">
-              Powered by <a href="https://kiwiton-tech.com/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">KiwiTon Technology</a>
+              Powered by <a href="https://kiwiton-tech.com/" target="_blank" rel="noopener noreferrer" className="text-[color:var(--color-gold)] hover:underline">KiwiTon Technology</a>
             </p>
           </div>
 
@@ -28,29 +28,19 @@ export const Footer = () => {
             <h4 className="mb-4 text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="hover:text-gold">
-                  Home
-                </Link>
+                <Link href="/" className="hover:text-[color:var(--color-gold)]">Home</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-gold">
-                  About Us
-                </Link>
+                <Link href="/about" className="hover:text-[color:var(--color-gold)]">About Us</Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-gold">
-                  Our Services
-                </Link>
+                <Link href="/services" className="hover:text-[color:var(--color-gold)]">Our Services</Link>
               </li>
               <li>
-                <Link href="/consultants" className="hover:text-gold">
-                  Our Consultants
-                </Link>
+                <Link href="/consultants" className="hover:text-[color:var(--color-gold)]">Our Consultants</Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-gold">
-                  Contact Us
-                </Link>
+                <Link href="/contact" className="hover:text-[color:var(--color-gold)]">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -60,34 +50,22 @@ export const Footer = () => {
             <h4 className="mb-4 text-lg font-semibold">Our Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/services#project-management" className="hover:text-gold">
-                  Project Management
-                </Link>
+                <Link href="/services#project-management" className="hover:text-[color:var(--color-gold)]">Project Management</Link>
               </li>
               <li>
-                <Link href="/services#program-management" className="hover:text-gold">
-                  Program Management
-                </Link>
+                <Link href="/services#program-management" className="hover:text-[color:var(--color-gold)]">Program Management</Link>
               </li>
               <li>
-                <Link href="/services#strategic-planning" className="hover:text-gold">
-                  Strategic Planning
-                </Link>
+                <Link href="/services#strategic-planning" className="hover:text-[color:var(--color-gold)]">Strategic Planning</Link>
               </li>
               <li>
-                <Link href="/services#data-analytics" className="hover:text-gold">
-                  Data & Analytics
-                </Link>
+                <Link href="/services#data-analytics" className="hover:text-[color:var(--color-gold)]">Data & Analytics</Link>
               </li>
               <li>
-                <Link href="/services#vendor-management" className="hover:text-gold">
-                  Vendor Management
-                </Link>
+                <Link href="/services#vendor-management" className="hover:text-[color:var(--color-gold)]">Vendor Management</Link>
               </li>
               <li>
-                <Link href="/services#ai-consulting" className="hover:text-gold">
-                  AI Consulting
-                </Link>
+                <Link href="/services#ai-consulting" className="hover:text-[color:var(--color-gold)]">AI Consulting</Link>
               </li>
             </ul>
           </div>
@@ -98,7 +76,7 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 mr-2 text-gold"
+                  className="w-5 h-5 mr-2 text-[color:var(--color-gold)]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -111,13 +89,13 @@ export const Footer = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <a href="mailto:info@eetconsultinggroup.com" className="hover:text-gold">
+                <a href="mailto:info@eetconsultinggroup.com" className="hover:text-[color:var(--color-gold)]">
                   info@eetconsultinggroup.com
                 </a>
               </li>
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 mr-2 text-gold"
+                  className="w-5 h-5 mr-2 text-[color:var(--color-gold)]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -130,13 +108,13 @@ export const Footer = () => {
                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                   />
                 </svg>
-                <a href="tel:+1234567890" className="hover:text-gold">
+                <a href="tel:+1234567890" className="hover:text-[color:var(--color-gold)]">
                   (123) 456-7890
                 </a>
               </li>
               <li className="flex items-start">
                 <svg
-                  className="w-5 h-5 mr-2 text-gold"
+                  className="w-5 h-5 mr-2 text-[color:var(--color-gold)]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -163,7 +141,7 @@ export const Footer = () => {
             <div className="flex mt-4 space-x-4">
               <a
                 href="#"
-                className="text-white hover:text-gold"
+                className="text-white hover:text-[color:var(--color-gold)]"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -177,7 +155,7 @@ export const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-white hover:text-gold"
+                className="text-white hover:text-[color:var(--color-gold)]"
                 aria-label="Twitter"
               >
                 <svg
@@ -191,7 +169,7 @@ export const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-white hover:text-gold"
+                className="text-white hover:text-[color:var(--color-gold)]"
                 aria-label="Facebook"
               >
                 <svg

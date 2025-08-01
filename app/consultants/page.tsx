@@ -121,13 +121,49 @@ Welcome to the journey of transformation with Marilyn Ortiz, a dynamic Senior Co
 
 Marilyn's approach is rooted in the power of connection and collaboration, blending analytical precision with creative problem-solving to deliver measurable results. Her professional journey spans diverse industries, where she has honed her ability to navigate complex challenges, foster stakeholder alignment, and implement data-driven strategies that propel businesses forward. Whether guiding organizations through transformative change or leveraging cutting-edge AI tools to unlock new opportunities, Marilyn is dedicated to crafting tailored solutions that resonate with clients' unique goals.
 
-With a deep commitment to empowering organizations, Marilyn excels at translating vision into action. Her ability to weave compelling narratives ensures that strategies not only achieve outcomes but also inspire teams and stakeholders to embrace change. Her expertise in Vendor Management and Data & Analytics Consulting further strengthens her ability to deliver impactful, sustainable growth for clients across sectors.
+With a deep commitment to empowering organizations, Marilyn excels at translating vision into actionable roadmaps, ensuring that each step of the transformation journey is purposeful and impactful. Her expertise in Vendor Management and Data & Analytics further enhances her ability to optimize resources and extract meaningful insights that drive informed decision-making.
 
-Marilyn's collaborative spirit and strategic insight make her an invaluable partner in writing the next chapter of your organization's success. Join her in transforming challenges into opportunities and unlocking your business's full potential.
+Beyond her professional achievements, Marilyn is known for her authentic leadership style, creating environments where innovation thrives and teams excel. Her ability to listen deeply, communicate effectively, and adapt to evolving needs makes her a trusted advisor for clients seeking to navigate today's complex business landscape.
 
-Let's connect to explore how Marilyn and the Elite Enterprise Transformation Consulting Group can drive your vision forward!`,
+Partner with Marilyn and Elite Enterprise Transformation Consulting Group to unlock your organization's full potential and embark on a journey of meaningful transformation. Together, we'll build strategies that not only address immediate challenges but also position your business for sustainable success in an ever-changing world.`,
     image: '/images/consultants/place-holder.jpg',
-  }
+  },
+  {
+    id: 'laura-ashley-shaw',
+    name: 'Laura-Ashley Shaw',
+    title: 'Consultant',
+    location: 'Albuquerque, New Mexico',
+    specialties: ['Administrative Support', 'Process Improvement', 'Organizational Skills'],
+    shortBio: 'Administrative professional with over seven years of experience providing high-level support to senior executives and managing confidential information.',
+    fullBio: `Hello, I'm Laura-Ashley Shaw, a consultant at Elite Enterprise Transformation Consulting Group, based in the Albuquerque, New Mexico area. With over seven years of experience as an Administrative Assistant, I specialize in providing high-level support to senior executives, managing calendars, organizing meetings, and handling confidential documents with discretion. My passion lies in fostering effective communication with internal and external stakeholders to drive organizational success.
+
+Equipped with an Associate's degree in Interdisciplinary Studies from Central New Mexico Community College and pursuing a Bachelor's in Psychology at Western Governors University, I bring strong organizational skills, a Six Sigma Green Belt certification, and a proven ability to work independently or as part of a team. My experience in budget management and process improvement enables me to deliver tailored administrative solutions that enhance operational efficiency and support strategic goals. Let's connect to explore how I can help streamline your organization's administrative processes!`,
+    image: '/images/consultants/laura-ashley-shaw.jpeg',
+  },
+  {
+    id: 'tamoy-monroe',
+    name: 'Tamoy Monroe',
+    title: 'Consultant',
+    location: 'Irvine, California',
+    specialties: ['Talent Acquisition', 'Leadership Recruitment', 'Team Building'],
+    shortBio: 'Talent acquisition specialist with extensive experience in fostering diverse, high-performing teams and driving organizational success.',
+    fullBio: `Hello, I'm Tamoy Monroe, a consultant at Elite Enterprise Transformation Consulting Group, based in the Irvine area. With a strong background in talent acquisition and leadership recruitment from my time at Microsoft, I specialize in fostering diverse, high-performing teams and driving organizational success. My passion lies in building meaningful connections and delivering strategic solutions that align with business goals.
+
+With a degree from the University of California, San Diego, and extensive experience mentoring professionals, I bring a customer-focused approach to consulting, emphasizing collaboration and innovative problem-solving. My expertise in navigating complex hiring landscapes and supporting leadership development enables me to deliver tailored strategies for clients. Let's connect to explore how I can help your organization thrive through people-centric solutions!`,
+    image: '/images/consultants/tamoy-monroe.jpeg',
+  },
+  {
+    id: 'john-lawrence',
+    name: 'John E. Lawrence II',
+    title: 'Senior Consultant',
+    location: 'Washington, DC Metropolitan Area',
+    specialties: ['Project Management', 'Program Management', 'Process Reengineering', 'Quality Management'],
+    shortBio: 'Project Management Professional (PMP) and Professional Scrum Master (PSM I) with over two decades of experience leading enterprise program management.',
+    fullBio: `Hello, I'm John E. Lawrence II, a senior consultant at Elite Enterprise Transformation Consulting Group, based in the Washington, DC, Metropolitan Area. As a Project Management Professional (PMP) and Professional Scrum Master (PSM I) with over two decades of experience, I specialize in leading enterprise program management and delivering strategic IT and business solutions. My passion lies in driving organizational success through process reengineering, quality management, and collaborative leadership.
+
+With a robust background at organizations like WhirlWind Technologies and the Department of Treasury, I've spearheaded initiatives such as establishing enterprise PMOs, implementing ISO 9001:2015-compliant quality systems, and managing mission-critical projects for federal agencies. My expertise in Agile and Waterfall methodologies, coupled with a proven ability to foster cross-functional collaboration, enables me to deliver tailored solutions that drive measurable results. Let's connect to explore how I can help your organization achieve its strategic goals through effective program management and process optimization!`,
+    image: '/images/consultants/place-holder.jpg',
+  },
 ];
 
 // Consultant card component
