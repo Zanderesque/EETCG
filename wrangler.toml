@@ -7,7 +7,3 @@ pages_build_output_dir = ".open-next/standalone"
 # Environment variables (add as needed)
 [vars]
 NODE_ENV = "production"
-
-# Pages configuration
-[site]
-bucket = ".open-next/assets"
