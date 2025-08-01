@@ -3,8 +3,6 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
   deploy:
@@ -36,5 +34,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: eetcg
           directory: .open-next/standalone
-          # Optional: Use wrangler for deployment instead
-          # wranglerVersion: '3'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
