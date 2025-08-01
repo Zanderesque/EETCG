@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "opennext:build": "next build && open-next build",
-    "opennext:deploy": "wrangler pages deploy .open-next/standalone --project-name=eetcg",
-    "opennext:dev": "wrangler pages dev .open-next/standalone --compatibility-flag=nodejs_compat",
+    "opennext:deploy": "npx wrangler pages deploy .open-next/standalone --project-name=eetcg",
+    "opennext:dev": "npx wrangler pages dev .open-next/standalone --compatibility-flag=nodejs_compat",
     "deploy": "npm run opennext:build && npm run opennext:deploy",
     "preview": "npm run opennext:build && npm run opennext:dev"
   },
