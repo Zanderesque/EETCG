@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --navy: #1A3C5A;
+  --gold: #D4A017;
+  --white: #FFFFFF;
+  --light-gray: #F5F6F5;
+  --teal: #4DB6AC;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--navy);
+  background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply px-6 py-2 font-medium transition-colors rounded-md;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-navy hover:bg-opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply text-navy bg-teal hover:bg-opacity-90;
+  }
+  
+  .btn-outline {
+    @apply text-navy border border-navy hover:bg-navy hover:text-white;
+  }
+}

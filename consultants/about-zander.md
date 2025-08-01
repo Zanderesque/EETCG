@@ -1,0 +1,9 @@
+About Me
+
+Hello, I’m Alex (Zander) Bolyanatz, PMP, a senior consultant at Elite Enterprise Transformation Consulting Group, based in the Albuquerque-Santa Fe Metropolitan Area. With over a decade of experience in healthcare IT and project management, I specialize in delivering transformative solutions in Project Management, Program Management, Strategic Planning, Data & Analytics Consulting, Vendor Management, and AI Consulting. As a certified Project Management Professional (PMP), I am passionate about aligning innovative technology with business goals to drive operational excellence and measurable impact.
+
+My career has been defined by leading complex, high-impact projects in healthcare IT, where I’ve honed my expertise in optimizing data systems, managing cross-functional teams, and implementing strategic initiatives. At Elite Enterprise Transformation Consulting Group, I guide clients through digital transformations, leveraging AI and analytics to unlock new opportunities and streamline operations. My recent work includes spearheading enterprise-wide IT initiatives, enhancing vendor partnerships, and delivering projects that improve organizational efficiency and outcomes.
+
+Beyond consulting, I serve as a board member of the Civilian Police Oversight Agency, advocating for transparency and community engagement. This role strengthens my ability to foster trust and collaboration with diverse stakeholders, a skill I bring to every client engagement.
+
+At Elite Enterprise Transformation Consulting Group, I work alongside our team to deliver tailored strategies that elevate your organization. Let’s connect to explore how we can drive your business forward with innovative, results-driven solutions.
