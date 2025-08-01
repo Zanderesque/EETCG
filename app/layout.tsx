@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
-import { openSans, montserrat } from './services/fonts';
+import { fontClasses } from './services/fonts';
 
 export const metadata: Metadata = {
   title: 'Elite Enterprise Transformation Consulting Group',
@@ -15,9 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${montserrat.className} ${openSans.className}`}>
-      {/* With Tailwind CSS v4, we can still use Next.js font variables for loading fonts */}
-      {/* But we reference them in CSS using the new variable system */}
+    <html lang="en" className={fontClasses}>
+      {/* Using system fonts defined in globals.css */}
       <body>
         <Navbar />
         <main>{children}</main>
