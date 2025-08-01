@@ -2,7 +2,13 @@
 const nextConfig = {
   // Configure image optimization
   images: {
-    domains: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "via.placeholder.com",
+        pathname: "**",
+      },
+    ],
   },
 };
 

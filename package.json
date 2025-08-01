@@ -4,13 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && open-next build",
     "start": "next start",
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
     "pages:deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
     "pages:watch": "npx @cloudflare/next-on-pages --watch",
-    "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat"
+    "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-flag=nodejs_compat",
+    "opennext:build": "next build && open-next build",
+    "opennext:deploy": "wrangler pages deploy .open-next/standalone",
+    "opennext:dev": "wrangler pages dev .open-next/standalone --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
     "next": "14.0.0",
@@ -18,6 +21,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.13",
+    "@opennextjs/cloudflare": "^1.6.2",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",

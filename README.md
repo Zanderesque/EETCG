@@ -171,6 +171,30 @@ npm run start
 ```
 
 ## Deployment
+
+### Cloudflare Pages Deployment (Recommended)
+This project is configured to deploy on Cloudflare Pages using OpenNext for optimal performance and edge capabilities.
+
+#### Build and Deploy with OpenNext:
+```bash
+# Build the project with OpenNext
+npm run opennext:build
+
+# Deploy to Cloudflare Pages
+npm run opennext:deploy
+```
+
+#### Configuration Files:
+- `open-next-config.js` and `open-next.config.ts` - OpenNext configuration for Cloudflare
+- `wrangler.toml` - Cloudflare Wrangler configuration
+- `next.config.js` - Next.js configuration with image optimization settings
+
+#### Environment Setup for Cloudflare:
+- Node.js version: 18.x or higher (20.x recommended)
+- Build command: `npm run opennext:build`
+- Output directory: `.open-next/standalone`
+
+### Alternative Deployment Options
 - Deploy on Vercel for seamless Next.js hosting.
 - Configure domain (https://eetconsultinggroup.com/) via Cloudflare DNS settings.
 - Enable automatic scaling and CDN for global performance.
