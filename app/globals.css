@@ -94,7 +94,9 @@
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-lg);
   }
-  
+}
+
+@layer components {
   /* Font system class for layout */
   .font-system {
     font-family: var(--font-secondary);
@@ -216,9 +218,7 @@
   .leading-6xl {
     line-height: var(--line-height-6xl);
   }
-}
 
-@layer components {
   /* Base button styles */
   .btn {
     @apply inline-flex items-center justify-center;
