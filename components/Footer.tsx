@@ -13,7 +13,7 @@ export const Footer = () => {
           <div>
             <h3 className="mb-4 text-xl font-bold text-[color:var(--color-gold)]">Elite Enterprise Transformation</h3>
             <p className="mb-4">
-              A black, female-owned consulting firm based in Beech Island, specializing in transformative business solutions.
+              A black, female-owned consulting firm specializing in transformative business solutions.
             </p>
             <p className="text-sm">
               &copy; {currentYear} Elite Enterprise Transformation Consulting Group. All rights reserved.
@@ -50,22 +50,13 @@ export const Footer = () => {
             <h4 className="mb-4 text-lg font-semibold">Our Services</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/services#project-management" className="hover:text-[color:var(--color-gold)]">Project Management</Link>
+                <Link href="/services/strategic-planning" className="hover:text-[color:var(--color-gold)]">Strategic Planning</Link>
               </li>
               <li>
-                <Link href="/services#program-management" className="hover:text-[color:var(--color-gold)]">Program Management</Link>
+                <Link href="/services/project-management" className="hover:text-[color:var(--color-gold)]">Project Management</Link>
               </li>
               <li>
-                <Link href="/services#strategic-planning" className="hover:text-[color:var(--color-gold)]">Strategic Planning</Link>
-              </li>
-              <li>
-                <Link href="/services#data-analytics" className="hover:text-[color:var(--color-gold)]">Data & Analytics</Link>
-              </li>
-              <li>
-                <Link href="/services#vendor-management" className="hover:text-[color:var(--color-gold)]">Vendor Management</Link>
-              </li>
-              <li>
-                <Link href="/services#ai-consulting" className="hover:text-[color:var(--color-gold)]">AI Consulting</Link>
+                <Link href="/services/program-management" className="hover:text-[color:var(--color-gold)]">Program Management</Link>
               </li>
             </ul>
           </div>
@@ -92,6 +83,29 @@ export const Footer = () => {
                 <a href="mailto:info@eetconsultinggroup.com" className="hover:text-[color:var(--color-gold)]">
                   info@eetconsultinggroup.com
                 </a>
+              </li>
+              <li className="flex items-start">
+                <svg
+                  className="w-5 h-5 mr-2 text-[color:var(--color-gold)]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span>Augusta, GA</span>
               </li>
             </ul>
 

@@ -2,7 +2,7 @@
 name = "eetcg"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".open-next/standalone"
+# Remove the pages_build_output_dir as it's handled by @opennextjs/cloudflare
 
 # Environment variables (add as needed)
 [vars]

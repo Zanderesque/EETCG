@@ -257,7 +257,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold">Location</h3>
                     <p className="text-gray-600">
-                      South Carolina
+                      Georgia
                     </p>
                     <p className="text-gray-600">
                       Serving clients nationwide
@@ -312,28 +312,28 @@ export default function ContactPage() {
         <div className="mt-16">
           <h2 className="mb-6 text-2xl font-bold text-center text-[color:var(--color-navy)]">Our Headquarters</h2>
           <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
-            {/* Google Maps embed of Beech Island, South Carolina */}
+            {/* Google Maps embed of Augusta, Georgia */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53087.20759994292!2d-81.89772867832036!3d33.43798099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f9d7d28f1e6e89%3A0xf2139b558a703541!2sBeech%20Island%2C%20SC%2029842!5e0!3m2!1sen!2sus!4v1690777215693!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106162.91797129547!2d-82.13399273541358!3d33.47173585775888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f9d5dab7866379%3A0x5f7d4a55949d1aea!2sAugusta%2C%20GA!5e0!3m2!1sen!2sus!4v1718839465149!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Beech Island, South Carolina Map"
-              aria-label="Map showing Beech Island, South Carolina location"
+              title="Augusta, Georgia Map"
+              aria-label="Map showing Augusta, Georgia location"
             ></iframe>
           </div>
           <div className="mt-6">
             <h3 className="mb-4 text-xl font-bold text-center text-[color:var(--color-navy)]">Our Consultants Nationwide</h3>
             <p className="text-center text-gray-600 max-w-3xl mx-auto">
-              While our headquarters is located in South Carolina, our team of expert consultants is distributed across the United States. 
+              While our headquarters is located in Georgia, our team of expert consultants is distributed across the United States. 
               This allows us to serve clients nationwide with local expertise and personalized service.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mt-6">
               <div className="px-4 py-2 text-sm bg-gray-100 rounded-full">New Mexico</div>
-              <div className="px-4 py-2 text-sm bg-gray-100 rounded-full">South Carolina</div>
+              <div className="px-4 py-2 text-sm bg-gray-100 rounded-full">Georgia</div>
               <div className="px-4 py-2 text-sm bg-gray-100 rounded-full">California</div>
               <div className="px-4 py-2 text-sm bg-gray-100 rounded-full">Texas</div>
               <div className="px-4 py-2 text-sm bg-gray-100 rounded-full">New York</div>
