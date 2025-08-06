@@ -2,7 +2,7 @@
 name = "eetcg"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".open-next/worker"  # Update this based on OpenNext v3+ output
+pages_build_output_dir = ".open-next"  # Updated to match actual output structure
 
 # Environment variables (add as needed)
 [vars]
