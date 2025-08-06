@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository contains the source code for the Elite Enterprise Transformation Consulting Group website (https://eetconsultinggroup.com/), built using Next.js. The website is designed to project a professional, modern, and client-focused image for a black, female-owned consulting firm based in Beech Island, South Carolina, specializing in Project Management, Program Management, Strategic Planning, Data & Analytics Consulting, Vendor Management, and AI Consulting.
+This repository contains the source code for the Elite Enterprise Transformation Consulting Group website (https://eetconsultinggroup.com/), built using Next.js. The website is designed to project a professional, modern, and client-focused image for a black, female-owned consulting firm specializing in Project Management, Program Management, Strategic Planning, Organizational Change Management, Training and Facilitation, Business Analysis, and more.
 
 ## Project Structure
 
@@ -18,6 +18,9 @@ This repository contains the source code for the Elite Enterprise Transformation
 │   │   ├── program-management/
 │   │   ├── project-management/
 │   │   ├── strategic-planning/
+│   │   ├── organizational-change-management/
+│   │   ├── training-and-facilitation/
+│   │   ├── business-analysis/
 │   │   └── page.tsx          # Main services page
 │   ├── globals.css           # Global styles
 │   ├── layout.tsx            # Root layout component
@@ -87,22 +90,22 @@ This repository contains the source code for the Elite Enterprise Transformation
 
 ### About:
 - Company mission, vision, and values.
-- Highlight black, female-owned identity and Beech Island roots.
+- Highlight black, female-owned identity and expertise.
 - Team overview with a link to the Consultants page.
 
 ### Services:
-- Detailed sections for each service: Project Management, Program Management, Strategic Planning, Data & Analytics Consulting, Vendor Management, AI Consulting.
+- Detailed sections for each service: Project Management, Program Management, Strategic Planning, Organizational Change Management, Training and Facilitation, Business Analysis.
 - Each section includes a description, benefits, and a case study or example (if available).
 
 ### Consultants:
 - Dynamic grid layout displaying consultant profiles (name, photo, bio, specialization).
 - Data fetched from a JSON file or API (e.g., `/api/consultants`) for dynamic loading.
-- Filterable by specialization (e.g., Project Management, AI Consulting) using a dropdown or buttons.
+- Filterable by specialization (e.g., Project Management, Strategic Planning) using a dropdown or buttons.
 - Each profile card includes a hover effect and a "Learn More" link to a modal or dedicated page.
 
 ### Contact:
 - Form for inquiries (name, email, message, optional phone number).
-- Map embed showing Augusta, GA, service area.
+- Map embed showing service area.
 - Contact details (email, phone) and 24/7 availability note.
 
 ## Technical Requirements
@@ -176,7 +179,15 @@ This repository contains the source code for the Elite Enterprise Transformation
 
 ## Deployment
 
-This website is deployed using Cloudflare Pages with the OpenNext adapter for Next.js applications. The deployment process has been optimized for reliability and uses both automated CI/CD and manual deployment options.
+This website is deployed using Cloudflare Pages with the OpenNext v3+ adapter for Next.js applications. The deployment process has been optimized for reliability and uses both automated CI/CD and manual deployment options.
+
+### Deployment Configuration
+
+The project uses OpenNext v3+ with the dedicated Cloudflare adapter:
+
+- **Main configuration file**: `cloudflare.config.js` (using `@opennextjs/cloudflare`)
+- **Build output directory**: `.open-next/worker` (OpenNext v3+ standard)
+- **Wrangler configuration**: `pages_build_output_dir = ".open-next/worker"` in wrangler.toml
 
 ### Automated Deployment (Recommended)
 
@@ -197,30 +208,30 @@ For local testing and manual deployment:
 # Install dependencies
 npm install
 
-# Build and preview locally
-npm run preview
+# Build with OpenNext
+npm run opennext:build
+
+# Preview locally (requires Wrangler CLI)
+npm run opennext:preview
 
 # Deploy to production
-npm run deploy
+npm run opennext:deploy
 ```
 
 ### Cloudflare Pages Build Configuration
 
-The following build settings are configured in Cloudflare Pages:
+The following build settings should be configured in Cloudflare Pages:
 
 - **Build command:** `npm run opennext:build`
-- **Deploy command:** `wrangler pages deploy .open-next/standalone`
-- **Non-production branch deploy command:** `npm run opennext:build && wrangler pages deploy .open-next/standalone`
-- **Path:** `/`
+- **Build output directory:** `.open-next/worker`
+- **Root directory:** `/`
 
 ### Key Deployment Features
 
-- **Pure OpenNext approach** - Eliminates adapter conflicts
-- **Automated CI/CD pipeline** - Reliable deployments on every push
-- **Error-free configuration** - Optimized wrangler.toml and package.json
-- **Standalone output** - Next.js configured for serverless deployment
-
-For detailed deployment information and troubleshooting, see [CLOUDFLARE_DEPLOYMENT.md](./CLOUDFLARE_DEPLOYMENT.md)...
+- **Pure OpenNext approach** - Using the dedicated Cloudflare adapter
+- **Optimized configuration** - Properly configured wrangler.toml and cloudflare.config.js
+- **Next.js output** - Configured with `output: "standalone"` for serverless deployment
+- **Static asset optimization** - Automatic handling of static assets in the public directory
 
 ## Development Setup
 

@@ -36,13 +36,10 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="mb-3 text-2xl font-bold">Project Management</h3>
-              <p className="mb-6 text-gray-600">
+              <p className="text-gray-600">
                 Expert guidance to plan, execute, and deliver projects on time, within budget, and to specification.
                 Our certified project managers ensure your initiatives achieve their objectives efficiently.
               </p>
-              <Link href="/services/project-management" className="inline-block px-6 py-3 font-semibold text-white transition-colors rounded-md bg-[color:var(--color-navy)] hover:bg-opacity-90">
-                Learn More
-              </Link>
             </div>
 
             {/* Program Management */}
@@ -53,13 +50,10 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="mb-3 text-2xl font-bold">Program Management</h3>
-              <p className="mb-6 text-gray-600">
+              <p className="text-gray-600">
                 Coordinate multiple related projects to achieve strategic business objectives and maximize value.
                 We align program outcomes with your organizational goals for transformative results.
               </p>
-              <Link href="/services/program-management" className="inline-block px-6 py-3 font-semibold text-white transition-colors rounded-md bg-[color:var(--color-navy)] hover:bg-opacity-90">
-                Learn More
-              </Link>
             </div>
 
             {/* Strategic Planning */}
@@ -70,13 +64,52 @@ export default function Services() {
                 </svg>
               </div>
               <h3 className="mb-3 text-2xl font-bold">Strategic Planning</h3>
-              <p className="mb-6 text-gray-600">
+              <p className="text-gray-600">
                 Develop clear, actionable strategies that align with your vision and drive sustainable growth.
                 Our strategic planning process helps you navigate complexity and seize opportunities.
               </p>
-              <Link href="/services/strategic-planning" className="inline-block px-6 py-3 font-semibold text-white transition-colors rounded-md bg-[color:var(--color-navy)] hover:bg-opacity-90">
-                Learn More
-              </Link>
+            </div>
+
+            {/* Organizational Change Management */}
+            <div className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 text-white rounded-full bg-[color:var(--color-navy)]">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-2xl font-bold">Organizational Change Management</h3>
+              <p className="text-gray-600">
+                Guide your organization through transitions with minimal disruption and maximum adoption.
+                Our change management strategies ensure successful implementation of new processes and systems.
+              </p>
+            </div>
+
+            {/* Training and Facilitation */}
+            <div className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 text-white rounded-full bg-[color:var(--color-navy)]">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-2xl font-bold">Training and Facilitation</h3>
+              <p className="text-gray-600">
+                Develop your team's capabilities through expert-led training programs and workshop facilitation.
+                We create engaging learning experiences that build skills and drive performance improvement.
+              </p>
+            </div>
+
+            {/* Business Analysis */}
+            <div className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-center justify-center w-16 h-16 mb-6 text-white rounded-full bg-[color:var(--color-navy)]">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-2xl font-bold">Business Analysis</h3>
+              <p className="text-gray-600">
+                Identify business needs and determine solutions to business problems through detailed analysis.
+                Our business analysts bridge the gap between stakeholders and technology to drive effective outcomes.
+              </p>
             </div>
           </div>
         </div>

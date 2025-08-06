@@ -10,7 +10,6 @@ const consultants = [
     id: 'carla',
     name: 'Carla Monroe',
     title: 'Owner & Principal Consultant',
-    location: 'Beech Island, South Carolina',
     specialties: ['Project Management', 'Program Management', 'Strategic Planning', 'Data & Analytics', 'Vendor Management', 'AI Consulting'],
     shortBio: 'Certified life coach, seasoned storyteller, and business strategist passionate about empowering organizations to achieve their full potential through transformative solutions.',
     fullBio: `Hello, I'm Carla Monroe, the owner and principal consultant of Elite Enterprise Transformation Consulting Group. As a certified life coach, seasoned storyteller, and business strategist, I am passionate about empowering organizations to achieve their full potential through transformative solutions. Based in Beech Island, I lead a black, female-owned consulting firm dedicated to driving success in Project Management, Program Management, Strategic Planning, Data & Analytics Consulting, Vendor Management, and AI Consulting.
@@ -27,8 +26,7 @@ Let's connect to transform your business and write the next chapter of your succ
   {
     id: 'jessica',
     name: 'Jessica Shaw',
-    title: 'Consultant',
-    location: 'Beech Island, South Carolina',
+    title: 'Senior Consultant',
     specialties: ['Project Management', 'Data & Analytics Consulting', 'AI Consulting'],
     shortBio: 'Results-oriented Systems Engineer with over nine years of experience in enterprise systems, specializing in delivering innovative solutions.',
     fullBio: `Hello, I'm Jessica Shaw, a consultant at Elite Enterprise Transformation Consulting Group, based in Beech Island, South Carolina. As a results-oriented Systems Engineer with over nine years of experience in enterprise systems, I specialize in delivering innovative solutions in Project Management, Data & Analytics Consulting, and AI Consulting. My passion lies in transforming complex technical challenges into streamlined, impactful strategies that drive organizational success.
@@ -44,7 +42,6 @@ Let's connect to explore how we can elevate your organization with strategic, te
     id: 'zander',
     name: 'Alex (Zander) Bolyanatz, PMP',
     title: 'Senior Consultant',
-    location: 'Albuquerque, New Mexico',
     specialties: ['Project Management', 'Program Management', 'Strategic Planning', 'Data & Analytics', 'Vendor Management', 'AI Consulting'],
     shortBio: 'Certified Project Management Professional (PMP) with over a decade of experience in healthcare IT and project management.',
     fullBio: `Hello, I'm Alex (Zander) Bolyanatz, PMP, a senior consultant at Elite Enterprise Transformation Consulting Group, based in the Albuquerque-Santa Fe Metropolitan Area. With over a decade of experience in healthcare IT and project management, I specialize in delivering transformative solutions in Project Management, Program Management, Strategic Planning, Data & Analytics Consulting, Vendor Management, and AI Consulting. As a certified Project Management Professional (PMP), I am passionate about aligning innovative technology with business goals to drive operational excellence and measurable impact.
@@ -60,7 +57,6 @@ At Elite Enterprise Transformation Consulting Group, I work alongside our team t
     id: 'angela-willis-clay',
     name: 'Angela Willis-Clay',
     title: 'Senior Consultant',
-    location: 'Tallahassee, Florida',
     specialties: ['Project Management', 'Process Reengineering', 'Organizational Transformation'],
     shortBio: 'Certified Project Management Professional (PMP) with over 25 years of experience driving enterprise-wide initiatives to success.',
     fullBio: `Hello, I'm Angela Willis-Clay, a senior consultant at Elite Enterprise Transformation Consulting Group, based in Tallahassee, Florida, with over 25 years of experience driving enterprise-wide initiatives to success. As a Certified Project Management Professional (PMP), Certified ScrumMaster (CSM), and Certified Scrum Product Owner (CSPO), I specialize in delivering strategic solutions in project management, process reengineering, and organizational transformation. My passion lies in streamlining complex challenges into actionable, results-driven strategies that empower organizations to achieve their goals.
@@ -72,7 +68,6 @@ At Elite Enterprise Transformation Consulting Group, I leverage my expertise in 
     id: 'pagie-ramsey',
     name: 'Paige Ramsey',
     title: 'Consultant',
-    location: 'Charleston, South Carolina',
     specialties: ['Project Management', 'Program Management', 'Lean Six Sigma'],
     shortBio: 'Certified Project Management Professional (PMP) with over a decade of experience in delivering strategic IT project and program management solutions.',
     fullBio: `Hello, I'm Paige Ramsey, a consultant at Elite Enterprise Transformation Consulting Group, based in the Charleston, South Carolina, Metropolitan Area. As a Certified Project Management Professional (PMP), Certified ScrumMaster (CSM), and Lean Six Sigma Green Belt, I bring over a decade of experience in delivering strategic IT project and program management solutions. My passion lies in optimizing processes, leveraging data-driven insights, and driving innovative technology initiatives to achieve business excellence.
@@ -84,7 +79,6 @@ With a Master's in Project Management from The Citadel and a robust background i
     id: 'patti-jordan',
     name: 'Patti Jordan',
     title: 'Consultant',
-    location: 'United States',
     specialties: ['Project Management', 'Agile Methodologies', 'IT Solutions'],
     shortBio: 'Project Management Professional (PMP) with expertise in delivering high-impact IT solutions using Agile and Waterfall methodologies.',
     fullBio: `Hello, I'm Patti Jordan, a consultant at Elite Enterprise Transformation Consulting Group, based in the United States. As a Project Management Professional (PMP), Certified Scrum Product Owner (CSPO), and Certified ScrumMaster (CSM) with an MBA from the Haslam College of Business, I bring extensive experience in delivering high-impact IT solutions using Agile and Waterfall methodologies. My passion lies in transforming complex IT challenges into streamlined, value-driven outcomes that exceed stakeholder expectations.
@@ -96,7 +90,6 @@ With a proven track record at organizations like Los Alamos National Laboratory,
     id: 'stephanie-shaw',
     name: 'Stephanie D. Shaw',
     title: 'Consultant',
-    location: 'Aiken, South Carolina',
     specialties: ['Product Management', 'Innovation', 'User-Centric Solutions'],
     shortBio: 'Experienced Product Manager specializing in transforming complex technical challenges into user-centric products that align with strategic business goals.',
     fullBio: `Consultant, Elite Enterprise Transformation Consulting Group
@@ -110,7 +103,6 @@ With a proven track record of breaking down technical requirements into actionab
     id: 'marilyn-ortiz',
     name: 'Marilyn Ortiz',
     title: 'Senior Consultant',
-    location: 'Beech Island, South Carolina',
     specialties: ['Project Management', 'Strategic Planning', 'AI Consulting', 'Vendor Management', 'Data & Analytics'],
     shortBio: 'Dynamic consultant with expertise in driving organizational success through innovative strategies and human-centered solutions.',
     fullBio: `About Marilyn Ortiz
@@ -132,7 +124,6 @@ Partner with Marilyn and Elite Enterprise Transformation Consulting Group to unl
     id: 'laura-ashley-shaw',
     name: 'Laura-Ashley Shaw',
     title: 'Consultant',
-    location: 'Albuquerque, New Mexico',
     specialties: ['Administrative Support', 'Process Improvement', 'Organizational Skills'],
     shortBio: 'Administrative professional with over seven years of experience providing high-level support to senior executives and managing confidential information.',
     fullBio: `Hello, I'm Laura-Ashley Shaw, a consultant at Elite Enterprise Transformation Consulting Group, based in the Albuquerque, New Mexico area. With over seven years of experience as an Administrative Assistant, I specialize in providing high-level support to senior executives, managing calendars, organizing meetings, and handling confidential documents with discretion. My passion lies in fostering effective communication with internal and external stakeholders to drive organizational success.
@@ -144,7 +135,6 @@ Equipped with an Associate's degree in Interdisciplinary Studies from Central Ne
     id: 'tamoy-monroe',
     name: 'Tamoy Monroe',
     title: 'Consultant',
-    location: 'Irvine, California',
     specialties: ['Talent Acquisition', 'Leadership Recruitment', 'Team Building'],
     shortBio: 'Talent acquisition specialist with extensive experience in fostering diverse, high-performing teams and driving organizational success.',
     fullBio: `Hello, I'm Tamoy Monroe, a consultant at Elite Enterprise Transformation Consulting Group, based in the Irvine area. With a strong background in talent acquisition and leadership recruitment from my time at Microsoft, I specialize in fostering diverse, high-performing teams and driving organizational success. My passion lies in building meaningful connections and delivering strategic solutions that align with business goals.
@@ -156,7 +146,6 @@ With a degree from the University of California, San Diego, and extensive experi
     id: 'john-lawrence',
     name: 'John E. Lawrence II',
     title: 'Senior Consultant',
-    location: 'Washington, DC Metropolitan Area',
     specialties: ['Project Management', 'Program Management', 'Process Reengineering', 'Quality Management'],
     shortBio: 'Project Management Professional (PMP) and Professional Scrum Master (PSM I) with over two decades of experience leading enterprise program management.',
     fullBio: `Hello, I'm John E. Lawrence II, a senior consultant at Elite Enterprise Transformation Consulting Group, based in the Washington, DC, Metropolitan Area. As a Project Management Professional (PMP) and Professional Scrum Master (PSM I) with over two decades of experience, I specialize in leading enterprise program management and delivering strategic IT and business solutions. My passion lies in driving organizational success through process reengineering, quality management, and collaborative leadership.
@@ -184,7 +173,6 @@ const ConsultantCard = ({ consultant }: { consultant: typeof consultants[0] }) =
       <div className="p-6">
         <h3 className="mb-2 text-xl font-bold">{consultant.name}</h3>
         <p className="mb-1 text-sm font-semibold text-navy">{consultant.title}</p>
-        <p className="mb-4 text-sm text-gray-500">{consultant.location}</p>
         <p className="mb-4 text-gray-600">{consultant.shortBio}</p>
         <div className="mb-4">
           <h4 className="mb-2 text-sm font-semibold">Specialties:</h4>

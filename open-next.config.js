@@ -1,4 +1,6 @@
 /** @type {import('open-next').OpenNextConfig} */
+// DEPRECATED: This file is from an older version of OpenNext and is no longer used.
+// OpenNext v3+ uses cloudflare.config.js instead.
 const config = {
   // Enable standalone output explicitly
   standalone: true,
