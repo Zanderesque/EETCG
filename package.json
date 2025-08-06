@@ -11,9 +11,7 @@
     "start": "next start",
     "lint": "next lint",
     "opennext:build": "npx opennextjs-cloudflare build",
-    "opennext:deploy": "npx opennextjs-cloudflare build && npx wrangler pages deploy .open-next",
-    "opennext:preview": "npx opennextjs-cloudflare build && npx opennextjs-cloudflare preview",
-    "opennext:dev": "npx wrangler pages dev .open-next/worker --compatibility-flag=nodejs_compat",
+    "opennext:dev": "npx wrangler pages dev .open-next --compatibility-flag=nodejs_compat",
     "preview": "npm run build && npm run opennext:dev"
   },
   "dependencies": {
