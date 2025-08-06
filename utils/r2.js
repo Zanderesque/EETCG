@@ -10,7 +10,7 @@ export function getR2PublicUrl() {
   // Use environment variable if available, otherwise fall back to the public development URL
   return (
     process.env.R2_PUBLIC_URL ||
-    "https://pub-d5883a1087a64093842347fe88ba41.r2.dev"
+    "https://pub-d5883a1087a6409384f23475fe808a41.r2.dev"
   );
 }
 
