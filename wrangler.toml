@@ -7,3 +7,9 @@ pages_build_output_dir = ".open-next"  # Updated to match actual output structur
 # Environment variables (add as needed)
 [vars]
 NODE_ENV = "production"
+
+# R2 bucket binding for OpenNext incremental cache
+[[r2_buckets]]
+binding = "NEXT_INC_CACHE_R2_BUCKET"
+bucket_name = "eetcg-next-cache"
+preview_bucket_name = "eetcg-next-cache-preview"
