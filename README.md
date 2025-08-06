@@ -186,8 +186,8 @@ This website is deployed using Cloudflare Pages with the OpenNext v3+ adapter fo
 The project uses OpenNext v3+ with the dedicated Cloudflare adapter:
 
 - **Main configuration file**: `cloudflare.config.js` (using `@opennextjs/cloudflare`)
-- **Build output directory**: `.open-next/worker` (OpenNext v3+ standard)
-- **Wrangler configuration**: `pages_build_output_dir = ".open-next/worker"` in wrangler.toml
+- **Build output directory**: `.open-next` (containing worker.js and assets)
+- **Wrangler configuration**: `pages_build_output_dir = ".open-next"` in wrangler.toml
 
 ### Automated Deployment (Recommended)
 
@@ -198,7 +198,6 @@ The project uses GitHub Actions for automated deployment:
    - Install dependencies with `npm ci`
    - Run linting checks
    - Build with OpenNext using `npm run opennext:build`
-   - Deploy to Cloudflare Pages
 
 ### Manual Deployment
 
@@ -223,7 +222,7 @@ npm run opennext:deploy
 The following build settings should be configured in Cloudflare Pages:
 
 - **Build command:** `npm run opennext:build`
-- **Build output directory:** `.open-next/worker`
+- **Build output directory:** `.open-next`
 - **Root directory:** `/`
 
 ### Key Deployment Features
