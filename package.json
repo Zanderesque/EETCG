@@ -38,7 +38,7 @@
     "autoprefixer": "^10.4.21",
     "convert-source-map": "^2.0.0",
     "eslint": "^9",
-    "eslint-config-next": "15.4.5",
+    "eslint-config-next": "15.4.6",
     "json5": "^2.2.3",
     "postcss": "^8.4.31",
     "tailwindcss": "^4.1.11",
