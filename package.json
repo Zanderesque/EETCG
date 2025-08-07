@@ -2,36 +2,48 @@
   "name": "elite-enterprise-consulting",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=20.0.0"
-  },
+"type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "opennext:build": "npx opennextjs-cloudflare build",
-    "opennext:dev": "npx wrangler pages dev .open-next --compatibility-flag=nodejs_compat",
-    "preview": "npm run build && npm run opennext:dev"
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "serve": "npx serve@latest out"
   },
   "dependencies": {
-    "@next/env": "^15.3.0",
-    "@opennextjs/cloudflare": "^1.6.3",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "19.1.7",
-    "autoprefixer": "10.4.21",
-    "next": "^15.3.0",
-    "open-next": "^2.0.5",
-    "postcss": "8.5.6",
+    "@next/env": "^15.4.5",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "next": "^15.3.3",
     "react": "19.1.1",
-    "react-dom": "19.1.1",
-    "tailwindcss": "^3.4.0",
-    "typescript": "5.9.2",
-    "wrangler": "4.27.0"
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
-    "@types/node": "24.1.0",
-    "eslint": "9.32.0",
-    "eslint-config-next": "^15.3.0"
+  "@babel/core": "^7.28.0",
+    "@babel/helpers": "^7.28.2",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@eslint/eslintrc": "^3",
+    "@opennextjs/cloudflare": "^1.6.2",
+    "@tailwindcss/forms": "^0.5.4",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@tailwindcss/typography": "^0.5.9",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.6.4",
+    "@testing-library/react": "^16.3.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "19.1.9",
+    "autoprefixer": "^10.4.21",
+    "convert-source-map": "^2.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.5",
+    "json5": "^2.2.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^4.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "5.9.2",
+    "wrangler": "^4.27.0"
   }
 }

@@ -1,9 +1,6 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { use } from 'react';
 
 // Consultant data - same as in the main consultants page
 const consultants = [
@@ -245,9 +242,19 @@ With a robust background at organizations like WhirlWind Technologies and the De
   }
 ];
 
-export default function ConsultantProfile({ params }: { params: Promise<{ id: string }> }) {
-  // Unwrap the params Promise using React.use()
-  const { id } = use(params);
+// Generate static params for all consultant IDs
+export async function generateStaticParams() {
+  return consultants.map((consultant) => ({
+    id: consultant.id,
+  }));
+}
+
+interface ConsultantPageProps {
+  params: Promise<{ id: string }>;
+}
+
+export default async function ConsultantProfile({ params }: ConsultantPageProps) {
+  const { id } = await params;
   
   // Find the consultant by ID
   const consultant = consultants.find(c => c.id === id);

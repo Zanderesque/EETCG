@@ -1,13 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure for serverless deployment
-  output: "standalone",
-
-  // Optimize for Cloudflare Pages
-  poweredByHeader: false,
-
-  // Add any additional configuration needed for your project
-  reactStrictMode: true,
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+  // Enable Cloudflare deployment with OpenNext
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["localhost:3000", ".eetcg.com"],
+    },
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

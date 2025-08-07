@@ -2,7 +2,37 @@
 
 ## Project Overview
 
-This repository contains the source code for the Elite Enterprise Transformation Consulting Group website (https://eetconsultinggroup.com/), built using Next.js. The website is designed to project a professional, modern, and client-focused image for a black, female-owned consulting firm specializing in Project Management, Program Management, Strategic Planning, Organizational Change Management, Training and Facilitation, Business Analysis, and more.
+This repository contains the source code for the Elite Enterprise Transformation Consulting Group website (https://eetconsultinggroup.com/), built using Next.js 15.4.6 with static export for Cloudflare Pages deployment. The website is designed to project a professional, modern, and client-focused image for a black, female-owned consulting firm specializing in Project Management, Program Management, Strategic Planning, Data & Analytics, Vendor Management, and AI Consulting.
+
+## Build Status
+
+**RESOLVED**: Static export build issues have been successfully resolved. The application now builds and deploys without errors.
+
+### Key Fixes Applied:
+- **Removed Edge Runtime**: Eliminated `export const runtime = 'edge';` from dynamic route layouts (incompatible with static export)
+- **Fixed Dynamic Routes**: Converted `/consultants/[id]` to server component with proper `generateStaticParams()` implementation
+- **Corrected TypeScript Types**: Updated params handling for Next.js 15 async params (`Promise<{ id: string }>`)
+- **Static Export Ready**: All 22 pages (including 11+ consultant profiles) now generate successfully
+
+### Build Results:
+```
+✓ Compiled successfully
+✓ Linting and checking validity of types
+✓ Collecting page data
+✓ Generating static pages (22/22)
+✓ Exporting (3/3)
+✓ Finalizing page optimization
+
+Route (app)                                 Size  First Load JS
+├ ● /consultants/[id]                      174 B         108 kB
+├   ├ /consultants/carla
+├   ├ /consultants/jessica  
+├   ├ /consultants/zander
+├   └ [+8 more paths]
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+```
 
 ## Project Structure
 
@@ -111,12 +141,12 @@ This repository contains the source code for the Elite Enterprise Transformation
 ## Technical Requirements
 
 ### Framework
-- **Next.js**: Use Next.js 14 (App Router) for server-side rendering, static site generation, and API routes.
+- **Next.js**: Use Next.js 15.4.6 for server-side rendering, static site generation, and API routes.
 - **React**: Leverage React components for reusable UI elements (e.g., ConsultantCard, ServiceCard).
 
 ### Font Configuration
-- **Google Fonts**: Using Next.js 14 font system with Montserrat and Open Sans.
-- **Implementation**: Fonts are configured in `app/services/fonts.js` and applied using the `.className` property (not `.variable` which is deprecated in Next.js 14).
+- **Google Fonts**: Using Next.js 15 font system with Montserrat and Open Sans.
+- **Implementation**: Fonts are configured in `app/services/fonts.js` and applied using the `.className` property (not `.variable` which is deprecated in Next.js 15).
 - **Usage Example**:
   ```javascript
   // In app/services/fonts.js
