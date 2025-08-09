@@ -228,8 +228,8 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <a href="mailto:info@eetconsultinggroup.com" className="text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)]">
-                      info@eetconsultinggroup.com
+                    <a href="mailto:info@eliteenterprisetcg.com" className="text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)]">
+                      info@eliteenterprisetcg.com
                     </a>
                   </div>
                 </div>
